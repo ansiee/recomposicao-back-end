@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Starter</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+
+      <header >
+        <h2 class="title">review project</h2>
+        <h1 class="underline"></h1>
+      </header>
+      
+      <section class="reviews">
+        <div class="img-container">
+          <img
+            id="img"
+            src="./person-1.jpeg"
+            alt=""
+          />
+        </div>
+
+        <div class="reviews-profile">
+          <h4 id="author">Sara Marck</h4>
+          <p id="job" >Ux Designer</p>
+        </div>
+
+        <div class="description">
+          <p id="descricao">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum odit
+            officiis itaque reiciendis sequi quo voluptas quaerat nemo hic
+            labore obcaecati dicta accusantium.
+          </p>
+        </div>
+
+        <div class="reviews-buttons">
+          <button id="botaoAnterior" class="prev-btn" onclick="prev()">
+            <i class="ph ph-caret-left"></i>
+          </button>
+
+          <button id="botaoProximo" class="next-btn" onclick="next()">
+            <i class="ph ph-caret-right"></i>
+          </button>
+        </div>
+
+        <button id="botaoAleatorio" class="random-btn" onclick="random()">Surpreenda-me</button>
+      </section>
+  </main>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
